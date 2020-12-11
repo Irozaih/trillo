@@ -26,9 +26,16 @@
   background-color: var(--color-grey-dark-1);
 
   flex: 0 0 18%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Could have set align-self: flex-end on .legal instead */
 }
 
 .hotel-view {
   background-color: #fff;
   flex: 1;
+
+  height: 80rem;
 }
