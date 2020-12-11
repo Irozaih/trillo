@@ -3,8 +3,6 @@
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
-
-  min-height: 50rem;
 }
 
 .header {
@@ -43,6 +41,7 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+  font-size: 1.4rem;
 }
 
 .description {
@@ -55,7 +54,9 @@
 }
 
 .user-reviews {
-  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   flex: 1;
 }
