@@ -463,3 +463,68 @@
     font-weight: 300;
   }
 }
+
+//////////////////////////////////////////////////
+// CALL TO ACTION
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+}
+
+//////////////////////////////////////////////////
+// CALL TO ACTION BUTTON
+.btn {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  overflow: hidden;
+  cursor: pointer;
+
+  & > * {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+    transform: translateY(0);
+  }
+  
+  &__invisible {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    padding: 2rem 0;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover  &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
