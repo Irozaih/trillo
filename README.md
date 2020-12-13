@@ -6,7 +6,7 @@ This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass c
 ## Table of Contents
 
 - [Flexbox](#flexbox)
-- [CSS custom properties (variables)](#css-custom-properties-(variables))
+- [CSS custom properties (variables)](#css-custom-properties-variables)
 
 
 ## Flexbox
