@@ -2,16 +2,14 @@
 
 This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass course.](https://www.udemy.com/advanced-css-and-sass/) Main goal of this project was to build a responsive landing page by using the **Flexbox CSS layout**.
 
----
 
 ## Table of Contents
 
-1. [Flexbox](1-flexbox)
-2. [CSS custom properties (variables)](2-css-custom-properties-(variables))
+- [Flexbox](#flexbox)
+- [CSS custom properties (variables)](#css-custom-properties-(variables))
 
----
 
-## 1. Flexbox
+## - Flexbox
 
 Flexbox is a one-dimensional layout method for laying out items in rows or columns. The main idea behind the flex layout is to give the container, a parent element with `display: flex` the ability to expand children elements to fill available free space or shrink them to prevent overflow, and thus best utilize the available space. Also, their order can easily be rearranged using the CSS `order` property.
 
@@ -26,6 +24,5 @@ Flexbox is supported in all major browsers except IE 9 and lower. [See browser s
 Browser support, December 2020:
 ![Flexbox browser support December 2020 image](img/readme/can-i-use-flexbox.png "Browser support December 2020")
 
----
 
-## 2. CSS custom properties (variables)
+## - CSS custom properties (variables)
