@@ -9,7 +9,7 @@ This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass c
 - [CSS custom properties (variables)](#css-custom-properties-(variables))
 
 
-## - Flexbox
+## Flexbox
 
 Flexbox is a one-dimensional layout method for laying out items in rows or columns. The main idea behind the flex layout is to give the container, a parent element with `display: flex` the ability to expand children elements to fill available free space or shrink them to prevent overflow, and thus best utilize the available space. Also, their order can easily be rearranged using the CSS `order` property.
 
@@ -25,4 +25,4 @@ Browser support, December 2020:
 ![Flexbox browser support December 2020 image](img/readme/can-i-use-flexbox.png "Browser support December 2020")
 
 
-## - CSS custom properties (variables)
+## CSS custom properties (variables)
