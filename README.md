@@ -22,37 +22,34 @@ As stated on the [MDN Flexbox Page](https://developer.mozilla.org/en-US/docs/Lea
 
 Flexbox is supported in all major browsers except IE 9 and lower. *[See browser support on caniuse.com website.](https://caniuse.com/?search=flexbox "Can I use flexbox?")*
 
-*Browser support, December 2020:*
-
-![Flexbox browser support December 2020](img/readme/can-i-use-flexbox.png "Browser support")
+![Flexbox browser support: December 2020](img/readme/can-i-use-flexbox.png "Browser support: December 2020")
 
 
 ## CSS custom properties (variables)
 
->Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that contain specific values to be reused throughout a document.
-*Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Values_in_JavaScript "Using CSS custom properties (variables)")*
+>**Custom** properties (sometimes referred to as **CSS variables** or **cascading variables**) are entities defined by CSS authors that contain specific values to be reused throughout a document.
+*[Source: MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties "Using CSS custom properties (variables)")*
 
-They are usually defined in the `:root` CSS pseudo-class which represents the `<html>` element and is identical to the selector `html`, except that its specificity is higher. *[See more on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)*
+They are usually defined in the `:root` CSS pseudo-class which represents the `<html>` element and is identical to the selector `html`, except that its specificity is higher.
 
 ![Defining CSS custom properties (variables) in `:root` element](img/readme/css-variables-root.png "Defining CSS variables")
 
-We can then easily access those CSS variables by using the `var()` function: `color: var(--color-primary);`
+We can easily access those CSS variables by using the `var()` function: `color: var(--color-primary);`
 
-Main reasons why to use native CSS instead of SASS variables:
+Some of the main reasons to use native CSS variables instead of SASS variables mentioned on *[CSS-TRICKS website](https://css-tricks.com/difference-between-types-of-css-variables/ "What is the difference between CSS variables and preprocessor variables?")* include:
 
-> You can use them **without the need of a preprocessor**.
-> **They cascade.** You can set a variable inside any selector to set or override its current value.
-> When their values change (e.g. media query or other state), **the browser repaints as needed**.
-> You can access and **manipulate them in JavaScript**.
-*Source: [CSS-TRICKS](https://css-tricks.com/difference-between-types-of-css-variables/ "What is the difference between CSS variables and preprocessor variables?")*
+> - You can use them **without the need of a preprocessor**.
+> - **They cascade.** You can set a variable inside any selector to set or override its current value.
+> - When their values change (e.g. media query or other state), **the browser repaints as needed**.
+> - You can access and **manipulate them in JavaScript**.
 
-Another interesting article on codyhouse.co: [Why we prefer CSS Custom Properties to SASS variables](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables).
+
+
+Another interesting article on this topic by codyhouse.co: [Why we prefer CSS Custom Properties to SASS variables](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables).
 
 CSS variables are not supported in IE browsers. *[See browser support on caniuse.com website.](https://caniuse.com/?search=variables)*
 
-*Browser support, December 2020:*
-
-![CSS variables browser support December 2020](img/readme/can-i-use-css-variables.png "Browser support")
+![CSS variables browser support: December 2020](img/readme/can-i-use-css-variables.png "Browser support: December 2020")
 
 
 ## SVG icons vs. icon fonts
