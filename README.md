@@ -24,7 +24,7 @@ So, besides vertically and horizontally centering items, flexbox can be used to 
 
 ![Flexbox: multi-column list](img/readme/multi-column-list.gif "Responsive multi-column list")
 
-Here we can also see a clever use of CSS `mask-image` property to display colored list item marker (of course, [not supported in IE browsers](https://caniuse.com/?search=mask-image)). Btw, we can alway create a fallback option by using **CSS Feature Queries** `@supports` to check if the browser supports selected properties.
+Here we can also see a clever use of CSS `mask-image` property to display colored list item marker (of course, [not supported in IE browsers](https://caniuse.com/?search=mask-image "Can I use mask-image?")). Btw, we can alway create a fallback option by using **CSS Feature Queries** `@supports` to check if the browser supports selected properties.
 
 Flexbox is supported in all major browsers except IE 9 and lower. *[See browser support on caniuse.com website.](https://caniuse.com/?search=flexbox "Can I use flexbox?")*
 
@@ -69,6 +69,7 @@ This project uses SVG sprite generated through [icomoon.app](https://icomoon.io/
 Also, one neat trick when using SVG icons in navigation links is that we can set their `fill` property to `currentColor`, which means that they inherit the color of the parent element. When parent color changes, SVG color changes as well:
 
 ![Current Color: Hover example](img/readme/current-color.gif "Current Color: Hover example")
+
 *Notice: Original code changed for the sake of the example*
 
 SVG is supported in all major browsers and IE9+ (with a couple of known issues). *[See browser support on caniuse.com website.](https://caniuse.com/?search=svg)*
