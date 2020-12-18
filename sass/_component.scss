@@ -190,6 +190,15 @@
     }
   }
 
+  // Readme: currentColor example
+  // &__item--active &__link:link,
+  // &__item--active &__link:visited,
+  // &__item:hover &__link:link,
+  // &__item:hover &__link:visited {
+  //   color: var(--color-grey-dark-1);
+  //   transition: color .2s .6s;
+  // }
+
   &__link:link,
   &__link:visited {
     position: relative;
