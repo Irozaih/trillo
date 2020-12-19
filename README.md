@@ -30,9 +30,7 @@ So, besides vertically and horizontally centering items, flexbox can be used to 
 
 Here we can also see a clever use of CSS `mask-image` property to display colored list item marker (of course, [not supported in IE browsers](https://caniuse.com/?search=mask-image "Can I use mask-image?")). Btw, we can always create a fallback option by using **CSS Feature Queries** `@supports` to check if the browser supports selected properties.
 
-Flexbox is supported in all major browsers except IE 9 and lower. *[See browser support on caniuse.com website.](https://caniuse.com/?search=flexbox "Can I use flexbox?")*
-
-![Flexbox browser support: December 2020](img/readme/can-i-use-flexbox.png "Browser support: December 2020")
+Flexbox is supported in all major browsers except IE 9 and lower. *[See browser support for flexbox.](https://caniuse.com/?search=flexbox "Can I use flexbox?")*
 
 
 ## CSS Custom Properties
@@ -55,9 +53,7 @@ Some of the main reasons to use native CSS variables instead of SASS variables a
 
 Another interesting article on this topic by codyhouse.co: [Why we prefer CSS Custom Properties to SASS variables](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables).
 
-CSS variables are not supported in IE browsers. *[See browser support on caniuse.com website.](https://caniuse.com/?search=variables)*
-
-![CSS variables browser support: December 2020](img/readme/can-i-use-css-variables.png "Browser support: December 2020")
+CSS variables are not supported in IE browsers. *[See browser for CSS variables.](https://caniuse.com/?search=variables)*
 
 
 ## SVG Icons vs. Icon Fonts
@@ -74,9 +70,7 @@ Also, one neat trick when using SVG icons in navigation links is that we can set
 
 *Notice: Original code changed for the sake of the example.*
 
-SVG is supported in all major browsers and IE9+ (with a couple of known issues). *[See browser support on caniuse.com website.](https://caniuse.com/?search=svg)*
-
-![SVG browser support: December 2020](img/readme/can-i-use-svg.png "Browser support: December 2020")
+SVG is supported in all major browsers and IE9+ (with a couple of known issues). *[See browser support for SVG.](https://caniuse.com/?search=svg)*
 
 
 ## Responsive Design
@@ -86,7 +80,7 @@ This project utilizes **Desktop First** strategy. This means that we first write
 Flexbox helps us to very easily make changes in the website layout. Take for example the main navigation, displayed in the sidebar section for desktop screens and in the header section for tablet and mobile screens. This is done by setting the parent element `flex-direction` from `row` to `column`. Easy. Right?
 
 | Desktop Screens                                  | Tablet & Mobile Screens                          |
-|--------------------------------------------------|--------------------------------------------------|
+|:------------------------------------------------:|:------------------------------------------------:|
 | ![](img/readme/desktop-screens.png)              | ![](img/readme/tablet-mobile-screens.png)        |
 
 
@@ -94,18 +88,25 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 
 Here is the list of some cool tools used throughout this course:
 
-- [Icomoon](https://icomoon.io/)
+- [Icomoon](https://icomoon.io/):
   A great library of free vector icons packs. This app allows us to generate icon fonts from icons available on website as well as from custom icons uploaded to the app.
 
-- [Cubic Bezier](https://cubic-bezier.com/)
+- [Cubic Bezier](https://cubic-bezier.com/):
   A tool used to easily generate desired transition values for `cubic-bezier()` function.
 
 - [HTML Glyphs](https://css-tricks.com/snippets/html/glyphs/)
   A list of glyphs and their corresponding codes that can be used in HTML and CSS files.
 
-- [BEM methodology](http://getbem.com/)
+- [BEM Methodology](http://getbem.com/):
   A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking how to name a CSS class.
 
-- [Can I use](https://caniuse.com/)
+- [Can I use](https://caniuse.com/):
   A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+
+- [Tiny PNG](https://tinypng.com/):
+  A tool for smart PNG and JPEG compression
+
+---
+
+![That's all folks!](img/readme/thats-all-folks-looney-tunes.gif)
 
