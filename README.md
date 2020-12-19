@@ -2,12 +2,15 @@
 
 This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass course.](https://www.udemy.com/advanced-css-and-sass/ "Udemy | Advanced CSS and Sass: Flexbox, Grid, Animations and More!") Main goal of this project was to build a responsive landing page by using the **Flexbox CSS layout method**.
 
+Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS variables, animations and transitions as well as Responsive Design, some handy CSS tricks and helpful online tools.
+
 
 ## Table of Contents
 
 - [Flexbox](#flexbox)
 - [CSS custom properties (variables)](#css-custom-properties-variables)
 - [SVG icons vs. Icon fonts](#svg-icons-vs-icon-fonts)
+- [Responsive Design](#responsive-design)
 
 
 ## Flexbox
@@ -20,11 +23,11 @@ As stated on the [MDN Flexbox Page](https://developer.mozilla.org/en-US/docs/Lea
 > - Making all the children of a container take up an equal amount of the available width/height, regardless of how much width/height is available.
 > - Making all columns in a multiple-column layout adopt the same height even if they contain a different amount of content.
 
-So, besides vertically and horizontally centering items, flexbox can be used to easily build responsive multi-column lists:
+So, besides vertically and horizontally centering items, flexbox can be used to easily build responsive multi-column lists by utilizing `flex-wrap` property and setting list items width:
 
 ![Flexbox: multi-column list](img/readme/multi-column-list.gif "Responsive multi-column list")
 
-Here we can also see a clever use of CSS `mask-image` property to display colored list item marker (of course, [not supported in IE browsers](https://caniuse.com/?search=mask-image "Can I use mask-image?")). Btw, we can alway create a fallback option by using **CSS Feature Queries** `@supports` to check if the browser supports selected properties.
+Here we can also see a clever use of CSS `mask-image` property to display colored list item marker (of course, [not supported in IE browsers](https://caniuse.com/?search=mask-image "Can I use mask-image?")). Btw, we can always create a fallback option by using **CSS Feature Queries** `@supports` to check if the browser supports selected properties.
 
 Flexbox is supported in all major browsers except IE 9 and lower. *[See browser support on caniuse.com website.](https://caniuse.com/?search=flexbox "Can I use flexbox?")*
 
@@ -49,8 +52,6 @@ Some of the main reasons to use native CSS variables instead of SASS variables a
 > - When their values change (e.g. media query or other state), **the browser repaints as needed**.
 > - You can access and **manipulate them in JavaScript**.
 
-
-
 Another interesting article on this topic by codyhouse.co: [Why we prefer CSS Custom Properties to SASS variables](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables).
 
 CSS variables are not supported in IE browsers. *[See browser support on caniuse.com website.](https://caniuse.com/?search=variables)*
@@ -70,9 +71,20 @@ Also, one neat trick when using SVG icons in navigation links is that we can set
 
 ![Current Color: Hover example](img/readme/current-color.gif "Current Color: Hover example")
 
-*Notice: Original code changed for the sake of the example*
+*Notice: Original code changed for the sake of the example.*
 
 SVG is supported in all major browsers and IE9+ (with a couple of known issues). *[See browser support on caniuse.com website.](https://caniuse.com/?search=svg)*
 
 ![SVG browser support: December 2020](img/readme/can-i-use-svg.png "Browser support: December 2020")
+
+
+## Responsive Design
+
+This project utilizes **Desktop First** strategy. This means that we first write CSS for desktop screens and then use media queries (`@media`) to adapt CSS for smaller tablet and mobile screens. Also, we are not using some specific breakpoints, e.g. like Bootstrap does (`576px, 768px, 992px, 1200px`), but instead add media queries when design starts to break. *This approach is not recommended for bigger projects.*
+
+Flexbox helps us to very easily make changes in the website layout. Take for example the main navigation, displayed in the sidebar section for desktop screens and in the header section for tablet and mobile screens. This is done by setting the parent element `flex-direction` from `row` to `column`. Easy. Right?
+
+| Desktop Screens                                  | Tablet & Mobile Screens                          |
+|--------------------------------------------------|--------------------------------------------------|
+| ![](img/readme/desktop-screens.png)              | ![](img/readme/tablet-mobile-screens.png)        |
 
