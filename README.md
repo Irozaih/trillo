@@ -7,13 +7,14 @@ Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS 
 
 ## Table of Contents
 
-- [Flexbox](#flexbox)
-- [CSS custom properties (variables)](#css-custom-properties-variables)
-- [SVG icons vs. Icon fonts](#svg-icons-vs-icon-fonts)
+- [Flexbox Layout](#flexbox-layout)
+- [CSS Custom Properties](#css-custom-properties)
+- [SVG Icons vs. Icon Fonts](#svg-icons-vs-icon-fonts)
 - [Responsive Design](#responsive-design)
+- [Cool Tools](#cool-tools)
 
 
-## Flexbox
+## Flexbox Layout
 
 Flexbox is a one-dimensional layout method for laying out items in rows or columns. The main idea behind the flexbox is to give the container, a parent element with `display: flex` property the ability to expand children elements to fill available free space or shrink them to prevent overflow, and thus best utilize the available space. Also, children elements order can easily be rearranged by using the CSS `order` property.
 
@@ -34,7 +35,7 @@ Flexbox is supported in all major browsers except IE 9 and lower. *[See browser 
 ![Flexbox browser support: December 2020](img/readme/can-i-use-flexbox.png "Browser support: December 2020")
 
 
-## CSS custom properties (variables)
+## CSS Custom Properties
 
 >**Custom** properties (sometimes referred to as **CSS variables** or **cascading variables**) are entities defined by CSS authors that contain specific values to be reused throughout a document.
 *[Source: MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties "Using CSS custom properties (variables)")*
@@ -59,7 +60,7 @@ CSS variables are not supported in IE browsers. *[See browser support on caniuse
 ![CSS variables browser support: December 2020](img/readme/can-i-use-css-variables.png "Browser support: December 2020")
 
 
-## SVG icons vs. Icon fonts
+## SVG Icons vs. Icon Fonts
 
 One major advantage of SVG icons over Icon fonts is their superior accessibility. They have a lot of built in elements like `<title>` and `<desc>` which makes them accessible to screen readers. Also, SVGs allow us to have multicolored icons and wide variety of animation options. SVGs are treated as images by browsers and are easier to position. On the other hand, Icon fonts are inserted using pseudo-elements and their positioning is sometimes challenging. They may also encounter occasional failures. However, Icon fonts enjoy better cross browser compatibility. See more in [this great article by LambdaTest](https://www.lambdatest.com/blog/its-2019-lets-end-the-debate-on-icon-fonts-vs-svg-icons/) or [TLDR version on CSS-Tricks website](https://css-tricks.com/icon-fonts-vs-svg/).
 
@@ -87,4 +88,24 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 | Desktop Screens                                  | Tablet & Mobile Screens                          |
 |--------------------------------------------------|--------------------------------------------------|
 | ![](img/readme/desktop-screens.png)              | ![](img/readme/tablet-mobile-screens.png)        |
+
+
+## Cool Tools
+
+Here is the list of some cool tools used throughout this course:
+
+- [Icomoon](https://icomoon.io/)
+  A great library of free vector icons packs. This app allows us to generate icon fonts from icons available on website as well as from custom icons uploaded to the app.
+
+- [Cubic Bezier](https://cubic-bezier.com/)
+  A tool used to easily generate desired transition values for `cubic-bezier()` function.
+
+- [HTML Glyphs](https://css-tricks.com/snippets/html/glyphs/)
+  A list of glyphs and their corresponding codes that can be used in HTML and CSS files.
+
+- [BEM methodology](http://getbem.com/)
+  A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking how to name a CSS class.
+
+- [Can I use](https://caniuse.com/)
+  A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 
