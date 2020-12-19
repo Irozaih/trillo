@@ -89,18 +89,13 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 Here is the list of some cool tools used throughout this course:
 
 - [Icomoon](https://icomoon.io/): A great library of free vector icons packs. This app allows us to generate icon fonts from icons available on website as well as from custom icons uploaded to the app.
-
 - [Cubic Bezier](https://cubic-bezier.com/): A tool used to easily generate desired transition values for `cubic-bezier()` function.
-
 - [HTML Glyphs](https://css-tricks.com/snippets/html/glyphs/): A list of glyphs and their corresponding codes that can be used in HTML and CSS files.
-
 - [BEM Methodology](http://getbem.com/): A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking how to name a CSS class.
-
 - [Can I use](https://caniuse.com/): A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
-
 - [Tiny PNG](https://tinypng.com/): A tool for smart PNG and JPEG compression
 
 ---
 
-![That's all folks!](img/readme/thats-all-folks-looney-tunes.gif)
+![That's all folks!](img/readme/thats-all-folks-looney-tunes.gif "That's all folks!")
 
