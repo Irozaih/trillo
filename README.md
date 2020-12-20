@@ -4,13 +4,13 @@ This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass c
 
 Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS variables, animations and transitions as well as responsive design, some handy CSS tricks and helpful online tools.
 
-View project live at [https://irozaih.github.io/trillo/](https://irozaih.github.io/trillo/).
+View project live at [irozaih.github.io/trillo](https://irozaih.github.io/trillo/).
 
 ## Instructions
 
-After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to [`http://localhost:8080/`](http://localhost:8080/).
+After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to [`localhost:8080`](http://localhost:8080/).
 
-*Notice: If you have troubles with viewing project on `localhost` open `package.json` file and in the `scripts` object under `devserver` property remove `--host=localhost` flag, run `npm run start` again and navigate to [`http://127.0.0.1:8080/`](http://127.0.0.1:8080/).*
+*Notice: If you have troubles with viewing project on `localhost` open `package.json` file and in the `scripts` object under `devserver` property remove `--host=localhost` flag, run `npm run start` again and navigate to [`127.0.0.1:8080`](http://127.0.0.1:8080/).*
 
 
 ## Table of Contents
