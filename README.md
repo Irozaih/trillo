@@ -89,7 +89,7 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 
 | Desktop Screens                                  | Tablet & Mobile Screens                          |
 |:------------------------------------------------:|:------------------------------------------------:|
-| ![](img/readme/desktop-screens.png =600x)        | ![](img/readme/tablet-mobile-screens.png)        |
+| ![](img/readme/desktop-screens.png | width=600x) | ![](img/readme/tablet-mobile-screens.png)        |
 
 
 ## NPM and NPM Scripts
