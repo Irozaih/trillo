@@ -131,9 +131,9 @@ Here is the list of some cool tools used throughout this course:
 
 *Copyright notice: [I am not offering any license in a prominent place!](https://choosealicense.com/no-permission/) This generally means that you have no permission from the creator of the software to use, modify, or share the software.*
 
-This is a course project, not a software library that could be useful to open source community! You can code your own version by following the course mentioned in the [first section of this readme file](#trillo-a-flexbox-project). Good luck, and may the fourth be with you! *pun intended*
+This is a course project, not a software library that could be useful to open source community! You can code your own version by following the course mentioned in the [first section of this readme file](#trillo-a-flexbox-project). Good luck, and may the fourth be with you! *Pun intended. :see_no_evil: :hear_no_evil: :speak_no_evil:*
 
-Copyright &copy; 2020 by Irozaih. All rights reserver.
+Copyright &copy; 2020 by Irozaih. **All rights reserver.**
 
 
 ---
