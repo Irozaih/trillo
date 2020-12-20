@@ -1,4 +1,4 @@
-# Trillo - A Flexbox Project
+# Trillo: A Flexbox Project
 
 This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass course.](https://www.udemy.com/advanced-css-and-sass/ "Udemy | Advanced CSS and Sass: Flexbox, Grid, Animations and More!") Main goal of this project was to build a responsive landing page by using the **Flexbox CSS layout method**.
 
@@ -123,6 +123,17 @@ Here is the list of some cool tools used throughout this course:
 - [ ] Display a search suggestions menu when typing in search input
 - [X] Create captions for gallery images
 - [X] Make the page 100% responsive (`< 500px`)
+
+
+---
+
+### Licence
+
+*Copyright notice: [I am not offering any license in a prominent place!](https://choosealicense.com/no-permission/) This generally means that you have no permission from the creator of the software to use, modify, or share the software.*
+
+This is a course project, not a software library that could be useful to open source community! You can code your own version by following the course mentioned in the [first section of this readme file](#trillo-a-flexbox-project). Good luck, and may the fourth be with you! *pun intended*
+
+Copyright &copy; 2020 by Irozaih. All rights reserver.
 
 
 ---
