@@ -9,6 +9,8 @@ Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS 
 
 After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to [`http://localhost:8080/`](http://localhost:8080/).
 
+*Notice: If you have troubles with viewing project on `localhost` open `package.json` file and in the `scripts` object under `devserver` property remove `--host=localhost` flag, run `npm run start` again and navigate to [`http://127.0.0.1:8080/`](http://127.0.0.1:8080/).*
+
 
 ## Table of Contents
 
@@ -96,7 +98,7 @@ This project utilizes the raw power of `npm` (Node Package Manager) to manage de
 
 1. Compiles SASS (SCSS)
 2. Uses PostCSS Autoprefixer feature to apply prefixes for better browser support
-3. Compress (minify) CSS
+3. Compresses (minifies) CSS
 
 
 ## Cool Tools
@@ -106,7 +108,7 @@ Here is the list of some cool tools used throughout this course:
 - [Icomoon](https://icomoon.io/): A great library of free vector icons packs. This app allows us to generate icon fonts from icons available on website as well as from custom icons uploaded to the app.
 - [Cubic Bezier](https://cubic-bezier.com/): A tool used to easily generate desired transition values for `cubic-bezier()` function.
 - [HTML Glyphs](https://css-tricks.com/snippets/html/glyphs/): A list of glyphs and their corresponding codes that can be used in HTML and CSS files.
-- [BEM Methodology](http://getbem.com/): A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking how to name a CSS class.
+- [BEM Methodology](http://getbem.com/): A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking about how to name a CSS class.
 - [Can I use](https://caniuse.com/): A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 - [Tiny PNG](https://tinypng.com/): A tool for smart PNG and JPEG compression
 
