@@ -5,12 +5,18 @@ This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass c
 Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS variables, animations and transitions as well as Responsive Design, some handy CSS tricks and helpful online tools.
 
 
+## Instructions
+
+After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to `[http://localhost:8080/](http://localhost:8080/)`.
+
+
 ## Table of Contents
 
 - [Flexbox Layout](#flexbox-layout)
 - [CSS Custom Properties](#css-custom-properties)
 - [SVG Icons vs. Icon Fonts](#svg-icons-vs-icon-fonts)
 - [Responsive Design](#responsive-design)
+- [npm and npm scripts](npm-adn-npm-scripts)
 - [Cool Tools](#cool-tools)
 
 
@@ -84,6 +90,15 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 | ![](img/readme/desktop-screens.png)              | ![](img/readme/tablet-mobile-screens.png)        |
 
 
+## npm and npm scripts
+
+This project utilizes the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `npm run start` script, we also have a `npm run build:css` which makes the following actions:
+
+1. Compiles SASS (SCSS)
+2. Uses PostCSS Autoprefixer feature to apply prefixes for better browser support
+3. Compress (minify) CSS
+
+
 ## Cool Tools
 
 Here is the list of some cool tools used throughout this course:
@@ -94,6 +109,19 @@ Here is the list of some cool tools used throughout this course:
 - [BEM Methodology](http://getbem.com/): A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking how to name a CSS class.
 - [Can I use](https://caniuse.com/): A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 - [Tiny PNG](https://tinypng.com/): A tool for smart PNG and JPEG compression
+
+
+---
+
+### Additional Challenges
+
+- [ ] Display a menu with actions when clicked on user icon
+- [ ] Display a menu with messages when clicked on message icon
+- [ ] Display a menu with bookmarks when clicked on bookmark icon
+- [ ] Display a search suggestions menu when typing in search input
+- [X] Create captions for gallery images
+- [X] Make the page 100% responsive (`< 500px`)
+
 
 ---
 

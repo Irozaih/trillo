@@ -334,7 +334,7 @@ body {
     color: var(--color-grey-light-1);
     visibility: hidden;
     opacity: 0;
-    transition: opacity .2s;
+    transition: visibility .2s, opacity .2s;
     z-index: 10; }
   .gallery__item:hover .gallery__title::before {
     transform: scaleY(1);
@@ -348,7 +348,7 @@ body {
   .gallery__item:hover .gallery__text {
     visibility: visible;
     opacity: 1;
-    transition: opacity .2s .6s; }
+    transition: visibility .2s .6s, opacity .2s .6s; }
 
 .overview {
   display: flex;
