@@ -4,6 +4,7 @@ This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass c
 
 Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS variables, animations and transitions as well as responsive design, some handy CSS tricks and helpful online tools.
 
+View project live at [https://irozaih.github.io/trillo/](https://irozaih.github.io/trillo/).
 
 ## Instructions
 
