@@ -87,9 +87,9 @@ This project utilizes **Desktop First** strategy. This means that we first write
 
 Flexbox helps us to very easily make changes in the website layout. Take for example the main navigation, displayed in the sidebar section for desktop screens and in the header section for tablet and mobile screens. This is done by setting the parent element `flex-direction` from `row` to `column`. Easy. Right?
 
-| Desktop Screens                                       | Tablet & Mobile Screens                               |
-|:-----------------------------------------------------:|:-----------------------------------------------------:|
-| ![](img/readme/desktop-screens.png \| width=600x)     | ![](img/readme/tablet-mobile-screens.png)             |
+| Desktop Screens                             | Tablet & Mobile Screens                     |
+|:-------------------------------------------:|:-------------------------------------------:|
+| ![](img/readme/desktop-screens.png)         | ![](img/readme/tablet-mobile-screens.png)   |
 
 
 ## NPM and NPM Scripts
