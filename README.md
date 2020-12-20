@@ -7,7 +7,7 @@ Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS 
 
 ## Instructions
 
-After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to `[http://localhost:8080/](http://localhost:8080/)`.
+After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to [`http://localhost:8080/`](http://localhost:8080/).
 
 
 ## Table of Contents
@@ -16,7 +16,7 @@ After downloading/cloning project run `npm install` to install development depen
 - [CSS Custom Properties](#css-custom-properties)
 - [SVG Icons vs. Icon Fonts](#svg-icons-vs-icon-fonts)
 - [Responsive Design](#responsive-design)
-- [npm and npm scripts](npm-adn-npm-scripts)
+- [NPM and NPM Scripts](npm-adn-npm-scripts)
 - [Cool Tools](#cool-tools)
 
 
@@ -90,7 +90,7 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 | ![](img/readme/desktop-screens.png)              | ![](img/readme/tablet-mobile-screens.png)        |
 
 
-## npm and npm scripts
+## NPM and NPM Scripts
 
 This project utilizes the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `npm run start` script, we also have a `npm run build:css` which makes the following actions:
 
