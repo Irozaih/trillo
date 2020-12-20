@@ -2,7 +2,7 @@
 
 This is the second project from the [Jonas Schmedtmann's Advanced CSS and Sass course.](https://www.udemy.com/advanced-css-and-sass/ "Udemy | Advanced CSS and Sass: Flexbox, Grid, Animations and More!") Main goal of this project was to build a responsive landing page by using the **Flexbox CSS layout method**.
 
-Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS variables, animations and transitions as well as Responsive Design, some handy CSS tricks and helpful online tools.
+Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS variables, animations and transitions as well as responsive design, some handy CSS tricks and helpful online tools.
 
 
 ## Instructions
@@ -89,12 +89,12 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 
 | Desktop Screens                                  | Tablet & Mobile Screens                          |
 |:------------------------------------------------:|:------------------------------------------------:|
-| ![](img/readme/desktop-screens.png)              | ![](img/readme/tablet-mobile-screens.png)        |
+| ![](img/readme/desktop-screens.png =600x)        | ![](img/readme/tablet-mobile-screens.png)        |
 
 
 ## NPM and NPM Scripts
 
-This project utilizes the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `npm run start` script, we also have a `npm run build:css` which makes the following actions:
+This project relies on the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `npm run start` script, we also have a `npm run build:css` which does the following actions:
 
 1. Compiles SASS (SCSS)
 2. Uses PostCSS Autoprefixer feature to apply prefixes for better browser support
