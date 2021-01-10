@@ -6,11 +6,17 @@ Besides flexbox, the course covers the usage of SVG icons, BEM methodology, CSS 
 
 View project live at [irozaih.github.io/trillo](https://irozaih.github.io/trillo/).
 
+
 ## Instructions
 
-After downloading/cloning project run `npm install` to install development dependencies. Then run `npm run start` and navigate to [`localhost:8080`](http://localhost:8080/).
+Clone or download project and then run:
 
-*Notice: If you have troubles with viewing project on `localhost` open `package.json` file and in the `scripts` object under `devserver` property remove `--host=localhost` flag, run `npm run start` again and navigate to [`127.0.0.1:8080`](http://127.0.0.1:8080/).*
+```
+npm install
+npm start
+```
+
+*Notice: Project is set to open on `localhost:8080` address in the default browser by default. You can change any of these settings in `package.json` under `devserver` property. If you have any troubles with starting the project please remove all the flags. [See more live-server config options here.](https://github.com/tapio/live-server#usage-from-command-line)*
 
 
 ## Table of Contents
@@ -19,7 +25,7 @@ After downloading/cloning project run `npm install` to install development depen
 - [CSS Custom Properties](#css-custom-properties)
 - [SVG Icons vs. Icon Fonts](#svg-icons-vs-icon-fonts)
 - [Responsive Design](#responsive-design)
-- [NPM and NPM Scripts](npm-adn-npm-scripts)
+- [NPM and NPM Scripts](#npm-and-npm-scripts)
 - [Cool Tools](#cool-tools)
 
 
@@ -49,7 +55,27 @@ Flexbox is supported in all major browsers except IE 9 and lower. *[See browser 
 
 They are usually defined in the `:root` CSS pseudo-class which represents the `<html>` element and is identical to the selector `html`, except that its specificity is higher.
 
-![Defining CSS custom properties (variables) in `:root` element](img/readme/css-variables-root.png "Defining CSS variables")
+```scss
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+  --line: 1px solid var(--color-grey-light-2);
+}
+```
 
 We can easily access those CSS variables anywhere by using the `var()` function: `color: var(--color-primary);`
 
@@ -71,7 +97,11 @@ One major advantage of SVG icons over Icon fonts is their superior accessibility
 
 This project uses SVG sprite generated through [icomoon.app](https://icomoon.io/). SVG icons are then easily displayed with the help of `<use>` element:
 
-![SVG sprite: <use> element](img/readme/svg-use.png "Displaying SVG sprite icons with <use> element")
+```html
+<svg>
+  <use xlink:href="img/sprite.svg#icon-star"></use>
+</svg>
+```
 
 Also, one neat trick when using SVG icons in navigation links is that we can set their `fill` property to `currentColor`, which means that they inherit the color of the parent element. When parent color changes, SVG color changes as well:
 
@@ -84,9 +114,9 @@ SVG is supported in all major browsers and IE9+ (with a couple of known issues).
 
 ## Responsive Design
 
-This project utilizes **Desktop First** strategy. This means that we first write CSS for desktop screens and then use media queries (`@media`) to adapt CSS for smaller tablet and mobile screens. Also, we are not using some specific breakpoints, e.g. like Bootstrap does (`576px, 768px, 992px, 1200px`), but instead add media queries when design starts to break. *This approach is not recommended for bigger projects.*
+This project utilizes **Desktop First** strategy. This means that we first write CSS for desktop screens and then use media queries (`@media`) to adapt CSS for smaller tablet and mobile screens. Also, we are not using some specific breakpoints, e.g. like Bootstrap does (`576px, 768px, 992px, 1200px`), but instead we add media queries when design starts to break. *This approach is not recommended for bigger projects.*
 
-Flexbox helps us to very easily make changes in the website layout. Take for example the main navigation, displayed in the sidebar section for desktop screens and in the header section for tablet and mobile screens. This is done by setting the parent element `flex-direction` from `row` to `column`. Easy. Right?
+Flexbox allows us to very easily make changes in a website layout. Take for example the main navigation, displayed in the sidebar section for desktop screens and in the header section for tablet and mobile screens. This is done by setting the parent element `flex-direction` from `row` to `column`. Easy. Right?
 
 | Desktop Screens                             | Tablet & Mobile Screens                     |
 |:-------------------------------------------:|:-------------------------------------------:|
@@ -95,7 +125,7 @@ Flexbox helps us to very easily make changes in the website layout. Take for exa
 
 ## NPM and NPM Scripts
 
-This project relies on the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `npm run start` script, we also have a `npm run build:css` which does the following actions:
+This project relies on the raw power of `npm` (Node Package Manager) to manage dependencies and create build processes. Besides aforementioned `start` script - which runs live-server and compiles SCSS in parallel, we also have a `build:css` which does the following actions:
 
 1. Compiles SASS (SCSS)
 2. Uses PostCSS Autoprefixer feature to apply prefixes for better browser support
@@ -110,9 +140,10 @@ Here is the list of some cool tools used throughout this course:
 - [Cubic Bezier](https://cubic-bezier.com/): A tool used to easily generate desired transition values for `cubic-bezier()` function.
 - [HTML Glyphs](https://css-tricks.com/snippets/html/glyphs/): A list of glyphs and their corresponding codes that can be used in HTML and CSS files.
 - [BEM Methodology](http://getbem.com/): A CSS methodology that helps us to easier organize our CSS code and prevent headaches caused by thinking about how to name a CSS class.
-- [Can I use](https://caniuse.com/): A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
+- [Can I Use](https://caniuse.com/): A tool which provides us with up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.
 - [Tiny PNG](https://tinypng.com/): A tool for smart PNG and JPEG compression
-
+- [Screen To Gif](https://www.screentogif.com/): Screen, webcam and sketch-board recorder with an integrated editor
+- [Photopea](https://www.photopea.com/): Free online photoshop :trollface:
 
 ---
 
@@ -124,13 +155,14 @@ Here is the list of some cool tools used throughout this course:
 - [ ] Display a search suggestions menu when typing in search input
 - [X] Create captions for gallery images
 - [X] Make the page 100% responsive (`< 500px`)
+- [X] Optimize gifs and images
 
 
 ---
 
-### Licence
+### License
 
-*Copyright notice: [I am not offering any license in a prominent place!](https://choosealicense.com/no-permission/) This generally means that you have no permission from the creator of the software to use, modify, or share the software.*
+*Copyright notice: [I am not offering any license!](https://choosealicense.com/no-permission/) This generally means that you have no permission from the creator of the software to use, modify, or share the software.*
 
 This is a course project, not a software library that could be useful to open source community! You can code your own version by following the course mentioned in the [first section of this readme file](#trillo-a-flexbox-project). Good luck, and may the fourth be with you! *Pun intended. :see_no_evil: :hear_no_evil: :speak_no_evil:*
 
