@@ -1,0 +1,174 @@
+.user-nav {
+  display: flex;
+  align-self: stretch;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    padding: 0 2rem;
+    cursor: pointer;
+    color: var(--color-grey-dark-2);
+    transition: color 0.3s ease-in-out,
+                background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--color-grey-dark-1);
+    }
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: currentColor;
+  }
+
+  &__notification {
+    position: absolute;
+    top: 1.5rem ;
+    right: 1.1rem;;
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  &__user-name {
+    font-weight: 600;
+  }
+
+  &__dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 0;
+    z-index: 20;
+    transition: max-height .4s cubic-bezier(1,0,0,1);
+
+    &--align-right {
+      left: unset;
+      transform: unset;
+      right: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--color-grey-dark-1);
+      transform: scaleX(0);
+      height: 3px;
+      width: 100%;
+      transition: transform .2s .4s,
+                  height .4s cubic-bezier(1,0,0,1);
+    }
+  }
+
+  &__item:hover &__dropdown-menu {
+    max-height: 500px;
+    transition: max-height .4s cubic-bezier(1,0,0,1) .2s;
+
+    &::before {
+      transform: scaleX(1);
+      height: 100%;
+      transition: transform .2s,
+                  height .4s cubic-bezier(1,0,0,1) .2s;
+    }
+  }
+
+  &__menu-item {
+    position: relative;
+    z-index: 20;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s,
+                visibility .2s;
+  }
+
+  &__item:hover &__menu-item {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .2s .6s,
+                visibility .2s .6s;
+  }
+
+  &__link:link,
+  &__link:visited {
+    position: relative;
+    z-index: 30;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin: .4rem;
+    border-radius: .4rem;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .05);
+    }
+  }
+
+  &__menu-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+
+  &__menu-content {
+    max-width: 15rem;
+  }
+
+  &__menu-name {
+    font-weight: 600;
+  }
+
+  &__menu-stars {
+    display: flex;
+  }
+
+  &__icon-star {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--color-primary);
+
+    &--empty {
+      fill: var(--color-grey-dark-2);
+    }
+  }
+
+  &__menu-text {
+    font-size: 1rem;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__menu-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: currentColor;
+  }
+}

@@ -72,63 +72,7 @@
 
 //////////////////////////////////////////////////
 // USER NAVIGATION
-.user-nav {
-  display: flex;
-  align-self: stretch;
-
-  & > * {
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-    cursor: pointer;
-
-    &:hover {
-      background-color: var(--color-grey-light-2);
-    }
-  }
-
-  &__icon-box {
-    position: relative;
-  }
-
-  &__icon {
-    height: 2.25rem;
-    width: 2.25rem;
-    fill: var(--color-grey-dark-2);
-  }
-
-  &__notification {
-    position: absolute;
-    top: 1.5rem ;
-    right: 1.1rem;;
-    font-size: .8rem;
-    height: 1.75rem;
-    width: 1.75rem;
-    border-radius: 50%;
-    background-color: var(--color-primary);
-    color: #fff;
-
-    // line-height: 1.75rem;
-    // text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__user {
-
-  }
-
-  &__user-photo {
-    height: 3.75rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-
-  &__user-name {
-    font-weight: 600;
-  }
-}
+// Moved to _user-nav.scss
 
 //////////////////////////////////////////////////
 // SIDE NAVIGATION
@@ -547,7 +491,7 @@
       background-image: url(../img/chevron-thin-right.svg);
       background-size: cover;
 
-      //Newer browsers
+      // Newer browsers
       @supports (mask-image: url()) or (-webkit-mask-image: url()) {
         // NEW: mask-image
         background-color: var(--color-primary);
