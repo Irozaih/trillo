@@ -149,16 +149,16 @@ Here is the list of some cool tools used throughout this course:
 
 ### Additional Challenges
 
-- [x] Display a menu with actions when user hovers over user icon
-- [x] Display a menu with messages when user hovers over message icon
-- [x] Display a menu with bookmarks when user hovers over bookmark icon
+- [X] Display a menu with actions when user hovers over user icon
+- [X] Display a menu with messages when user hovers over message icon
+- [X] Display a menu with bookmarks when user hovers over bookmark icon
 - [ ] Display a search suggestions menu when typing in search input
 - [X] Create captions for gallery images
 - [X] Make the page 100% responsive (`< 500px`)
 - [X] Optimize gifs and images
 - [ ] Divide components.scss to multiple files
 - [ ] Create separate version of user navigation for smartphones and tablets
-- [ ] Add preloader
+- [X] Add preloader
 
 
 ---

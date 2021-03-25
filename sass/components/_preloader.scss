@@ -1,0 +1,55 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-grey-dark-1);
+  z-index: 999999;
+  transform: scaleX(1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--hidden {
+    transform: scaleX(0);
+    height: 8px;
+    transition: transform .2s .8s, // wait for content nad height animations
+                height .4s cubic-bezier(1,0,0,1) .4s; // wait for content to fade out
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: all .4s ease-in-out;
+
+    &--hidden {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility .4s ease-in-out,
+                  opacity .4s ease-in-out;
+    }
+  }
+
+  &__logo {
+    width: 16rem;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-grey-light-1);
+    margin-top: 2rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: var(--color-grey-light-1);
+  }
+}
